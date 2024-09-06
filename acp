@@ -1,0 +1,21 @@
+#!/bin/bash
+
+# Prompt the user for the commit message
+read -p "Enter commit message: " commit_message
+
+# Check if a commit message was provided
+if [ -z "$commit_message" ]; then
+  echo "Commit message cannot be empty. Exiting."
+  exit 1
+fi
+
+# Add all files in the current directory to the staging area
+git add .
+
+# Commit the changes with the provided commit message
+git commit -m "$commit_message"
+
+# Push the changes to the remote repository
+git push
+
+echo "Changes have been pushed to the remote repository."

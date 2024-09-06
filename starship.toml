@@ -1,0 +1,93 @@
+
+format = """$os$username$hostname$kubernetes$directory$git_branch$git_status"""
+
+[username]
+style_user = "#0e783d bold"
+style_root = "red bold"
+format = "[$user]($style)."
+disabled = false
+show_always = true
+
+[os]
+format = '[$symbol]( white)'   
+disabled = false
+
+[hostname]
+ssh_only = false
+format = '[$hostname](#0e783d bold ) '
+trim_at = "."
+disabled = false
+
+
+#------------------
+
+[aws]
+symbol = "  "
+
+
+[directory]
+read_only = " 󰌾"
+truncate_to_repo = true
+truncation_symbol='../'
+before_repo_root_style = 'cyan '
+repo_root_style = '#E97451 bold'
+style = 'cyan bold'
+format= '[$path]($style)[$read_only]($read_only_style) '
+
+
+[docker_context]
+symbol = " "
+
+
+
+[nodejs]
+symbol = " "
+disabled = true
+
+[python]
+disabled = true
+
+[os.symbols]
+Alpaquita = " "
+Alpine = " "
+AlmaLinux = " "
+Amazon = " "
+Android = " "
+Arch = " "
+Artix = " "
+CentOS = " "
+Debian = " "
+DragonFly = " "
+Emscripten = " "
+EndeavourOS = " "
+Fedora = " "
+FreeBSD = " "
+Garuda = "󰛓 "
+Gentoo = " "
+HardenedBSD = "󰞌 "
+Illumos = "󰈸 "
+Kali = " "
+Linux = " "
+Mabox = " "
+Macos = " "
+Manjaro = " "
+Mariner = " "
+MidnightBSD = " "
+Mint = " "
+NetBSD = " "
+NixOS = " "
+OpenBSD = "󰈺 "
+openSUSE = " "
+OracleLinux = "󰌷 "
+Pop = " "
+Raspbian = " "
+Redhat = " "
+RedHatEnterprise = " "
+RockyLinux = " "
+Redox = "󰀘 "
+Solus = "󰠳 "
+SUSE = " "
+Ubuntu = " "
+Unknown = " "
+Void = " "
+Windows = "󰍲 "
